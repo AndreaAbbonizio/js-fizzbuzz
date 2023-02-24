@@ -27,19 +27,35 @@ for(i= 1; i <= 100; i++){
     //aggiunta figli div al genitore(containerNumberEl)
     containerNumberEl.append(newEl);
     //assegnazione valore a variabile del div figlio
-    newEl = i ;
+    newEl.innerHTML= i ;
+    
+   
+   
     
     
     if(i % 3 == 0  && i % 5 == 0){
-        newEl = "FizzBuzz" ;
+        newEl.innerHTML = "FizzBuzz" ;  
+        containerNumberEl.append(newEl);
         console.log(newEl);
+        newEl.style.backgroundColor = "#0cd6a1";
+
     }else if(i % 5 == 0){
-        newEl = "Buzz";
+        newEl.innerHTML = "Buzz";
+        containerNumberEl.append(newEl);
         console.log(newEl);
+        newEl.style.backgroundColor = "#ffd166";
+        
     }else if(i % 3 == 0) {
-        newEl = "Fizz" ;
+        newEl.innerHTML = "Fizz" ;
+        containerNumberEl.append(newEl);
         console.log(newEl);
+        newEl.style.backgroundColor = "#f0466f";
+
     } else {
+        containerNumberEl.append(newEl);
         console.log(newEl);
+        newEl.innerHTML ;
+        
     }
+    
 }

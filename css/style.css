@@ -1,0 +1,29 @@
+body{
+    background-color: #2196F3;
+}
+
+#containerNumber{
+    background-color: #0080003d;
+    gap: 20px;
+}
+
+
+h1{
+    font-size: 80px;
+}
+
+#containerNumber div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    width: calc(100% / 7 - 20px / 6 * 7);
+    min-height: 89px;
+    padding: 10px;
+    border: 1px solid blue;
+    text-align: center;
+    margin: 10px;
+    background-color: #0e0e9212;
+
+}
